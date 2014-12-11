@@ -1,0 +1,41 @@
+{
+  "name": "popsicle-no-cache",
+  "version": "0.0.0",
+  "description": "Prevent caching of Popsicle HTTP requests",
+  "main": "popsicle-no-cache.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/popsicle-no-cache.git"
+  },
+  "keywords": [
+    "popsicle",
+    "plugin",
+    "cache",
+    "block",
+    "refresh",
+    "http"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/popsicle-no-cache/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/popsicle-no-cache",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.0.1",
+    "nock": "^0.51.0",
+    "popsicle": "^0.1.1"
+  },
+  "dependencies": {
+    "is-ie": "0.0.0"
+  }
+}
