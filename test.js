@@ -1,7 +1,13 @@
-var popsicle = require('popsicle');
-var expect   = require('chai').expect;
-var nock     = require('nock');
-var nocache  = require('./');
+/* global describe, it, beforeEach */
+
+/* istanbul ignore next */
+if (!global.Promise) {
+  require('es6-promise').polyfill()
+}
+
+var popsicle = require('popsicle')
+var nock = require('nock')
+var nocache = require('./')
 
 describe('popsicle no cache', function () {
   describe('cache control', function () {
@@ -12,12 +18,12 @@ describe('popsicle no cache', function () {
         }
       })
         .get('/')
-        .reply(200);
-    });
+        .reply(200)
+    })
 
     it('should set cache control header', function () {
       return popsicle('http://example.com')
-        .use(nocache());
-    });
-  });
-});
+        .use(nocache())
+    })
+  })
+})
