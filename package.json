@@ -1,6 +1,6 @@
 {
   "name": "popsicle-no-cache",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Prevent caching of Popsicle HTTP requests",
   "main": "popsicle-no-cache.js",
   "files": [
