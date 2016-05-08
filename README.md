@@ -5,7 +5,7 @@
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
-Prevent caching of HTTP requests.
+> Prevent caching of HTTP requests.
 
 ## Installation
 

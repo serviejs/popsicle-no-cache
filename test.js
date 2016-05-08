@@ -19,7 +19,7 @@ describe('popsicle no cache', function () {
     })
 
     it('should set cache control header', function () {
-      return popsicle('http://example.com')
+      return popsicle.get('http://example.com')
         .use(nocache())
     })
   })
